@@ -1,4 +1,6 @@
-In a machine with nvidia cuda access, run the following
+In a machine with nvidia cuda access, run the following. 
+
+Note the params `--userns=keep-id:uid`, `max_model_len`, `gpu_memory_utilization` in the podman command
 
 ```
 mkdir -p rhaiis-cache/{flashinfer,huggingface,torch,vllm}
