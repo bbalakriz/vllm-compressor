@@ -1,0 +1,10 @@
+ERROR 06-27 07:09:05 [core.py:387]   File "/opt/app-root/lib64/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 699, in get_kv_cache_config
+ERROR 06-27 07:09:05 [core.py:387]     check_enough_kv_cache_memory(vllm_config, kv_cache_spec, available_memory)
+ERROR 06-27 07:09:05 [core.py:387]   File "/opt/app-root/lib64/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 545, in check_enough_kv_cache_memory
+ERROR 06-27 07:09:05 [core.py:387]     raise ValueError(
+ERROR 06-27 07:09:05 [core.py:387] ValueError: To serve at least one request with the models's max seq len (131072), (18.00 GiB KV cache is needed, which is larger than the available KV cache memory (12.38 GiB). Based on the available memory,  Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+ERROR 06-27 07:09:05 [core.py:387]
+CRITICAL 06-27 07:09:05 [core_client.py:359] Got fatal signal from worker processes, shutting down. See stack trace above for root cause issue.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
