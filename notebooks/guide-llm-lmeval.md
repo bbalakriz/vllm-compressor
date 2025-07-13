@@ -15,7 +15,7 @@ pip install vllm
 vllm serve balakriz/DeepSeek-R1-0528-Qwen3-8B-W4A16-11jul --max_model_len=1024 --no-multi-step-stream-outputs
 ```
 
-##Test vLLM
+## Test vLLM
 ```
 curl -X POST http://localhost:8000/v1/completions   -H "Content-Type: application/json"   -d '{
     "model": "balakriz/DeepSeek-R1-0528-Qwen3-8B-W4A16-11jul",
